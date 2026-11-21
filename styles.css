@@ -1,0 +1,139 @@
+@font-face {
+    font-family: norse;
+    src: url(Norse.otf);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    background-color: rgb(56, 54, 54);
+
+    display: flex;
+    justify-content: center;
+}
+
+.left-pane {
+    width: 30vw;
+    padding: 0;
+    margin: 0;
+    background: url('image.jpg') center / cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-pane h1 {
+    background-color: rgb(0, 0, 0, 50%);
+    color: white;
+    margin-top: calc(100vh / 3 - 140px);
+    height: 140px;
+    font-size: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: norse, sans-serif;
+}
+
+.left-pane img {
+    height: 1.2em;
+}
+
+.left-pane footer {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: x-small;
+    margin-top: auto;
+}
+
+.left-pane footer a {
+    color: white;
+}
+
+.right-pane {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-pane > .top {
+    flex: 1;
+    background-color: rgb(237, 237, 237);
+    padding: 12px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.right-pane h1 {
+    font-size: large;
+    margin-left: 12px;
+}
+
+.right-pane .middle {
+    flex: 1;
+    background-color:  white;
+}
+
+.right-pane > .bottom {
+    padding: 12px;
+    flex: 1;
+    background-color: rgb(237, 237, 237);
+}
+
+.right-pane .middle form {
+    display: flex;
+}
+
+.right-pane form > div {
+    margin: 12px;
+}
+
+.left > div, .right > div {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 2px solid #E5E7EB;
+    border-radius: 2px;
+    margin-bottom: 12px;
+}
+
+label {
+    font-size: x-small;
+    font-weight: 600;
+    color: rgb(81, 77, 77);
+}
+
+input:user-invalid {
+    border: solid 1px red;
+}
+
+input:focus {
+    outline: none;
+    border: solid 1px blue
+
+}
+
+button {
+    width: 150px;
+    height: 35px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.bottom a {
+    color: #596D48;
+    font-weight: 700;
+    text-decoration: none;
+}
